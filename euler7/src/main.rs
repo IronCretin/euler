@@ -4,8 +4,11 @@ extern crate test;
 
 /// nth prime number
 pub fn nth_prime(n: u64) -> u64 {
-    let mut primes = Vec::with_capacity(n as _);
-    'outer: for i in 2.. {
+    let mut primes: Vec<u64> = Vec::with_capacity(n as _);
+    'outer: for i in [2, 3]
+        .into_iter()
+        .chain((1..).flat_map(|n| [6 * n - 1, 6 * n + 1]))
+    {
         if primes.len() >= n as _ {
             break;
         }
