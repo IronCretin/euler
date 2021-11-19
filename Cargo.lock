@@ -33,3 +33,24 @@ version = "0.1.0"
 dependencies = [
  "common",
 ]
+
+[[package]]
+name = "euler5"
+version = "0.1.0"
+dependencies = [
+ "common",
+]
+
+[[package]]
+name = "euler6"
+version = "0.1.0"
+dependencies = [
+ "common",
+]
+
+[[package]]
+name = "euler7"
+version = "0.1.0"
+dependencies = [
+ "common",
+]
